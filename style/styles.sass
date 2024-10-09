@@ -70,9 +70,9 @@ main
         text-align: center
         padding: 0 150px
         h2
-            font-size: 40px
-            padding: 40px 0
             color: $blue
+            &::after
+                background-color: $orange
         p.text
             font-size: 18px
             line-height: 1.5
@@ -83,6 +83,33 @@ main
             font-style: italic
             color: $blue
             text-decoration: underline $orange 3px
+    section#cta_services
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 150px
+        background-color: $blue
+        h2
+            color: $white
+            &::after
+                background-color: $yellow
+        div.services
+            display: flex
+            align-items: center
+            a.service
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 80px 50px 130px 50px
+                min-width: 500px
+                min-height: 300px
+                color: $white
+                background-color: $yellow-hover
+                transition: 0.5s
+                &:hover
+                    background-color: $yellow
+                h3
+                    font-size: 40px
 
 @media only screen and (max-width: 950px)
     header
@@ -110,6 +137,17 @@ main
                     a
                         margin-left: 12px
                         color: $blue
+    main
+        section#cta_services
+            padding: 0 50px
+            div.services
+                flex-direction: column
+                a.service
+                    margin: 50px 0
+                    min-width: 500px
+                    min-height: 400px
+                    h3
+                        font-size: 40px
 @media only screen and (max-width: 768px)
     main
         section#hero
@@ -129,6 +167,16 @@ main
                 font-size: 16px
             p.signature
                 font-size: 18px
+        section#cta_services
+            padding: 0 50px
+            div.services
+                flex-direction: column
+                a.service
+                    margin: 50px 0
+                    min-width: 350px
+                    min-height: 250px
+                    h3
+                        font-size: 40px
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -149,3 +197,13 @@ main
                 font-size: 14px
             p.signature
                 font-size: 16px
+        section#cta_services
+            padding: 0 50px
+            div.services
+                flex-direction: column
+                a.service
+                    margin: 50px 0
+                    min-width: 300px
+                    min-height: 200px
+                    h3
+                        font-size: 40px

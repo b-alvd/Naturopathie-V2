@@ -11,6 +11,18 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
 }
+body h2 {
+  font-size: 40px;
+  padding: 40px 0;
+  color: #ffffff;
+}
+body h2::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 3px;
+  margin: 10px auto;
+}
 body p, body a {
   margin: 0;
   font-family: "Fira Sans", sans-serif;
@@ -105,9 +117,10 @@ main section#about {
   padding: 0 150px;
 }
 main section#about h2 {
-  font-size: 40px;
-  padding: 40px 0;
   color: #264653;
+}
+main section#about h2::after {
+  background-color: #e76f51;
 }
 main section#about p.text {
   font-size: 18px;
@@ -121,6 +134,40 @@ main section#about p.signature {
   color: #264653;
   -webkit-text-decoration: underline #e76f51 3px;
           text-decoration: underline #e76f51 3px;
+}
+main section#cta_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 150px;
+  background-color: #264653;
+}
+main section#cta_services h2 {
+  color: #ffffff;
+}
+main section#cta_services h2::after {
+  background-color: #e9c46a;
+}
+main section#cta_services div.services {
+  display: flex;
+  align-items: center;
+}
+main section#cta_services div.services a.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 50px 130px 50px;
+  min-width: 500px;
+  min-height: 300px;
+  color: #ffffff;
+  background-color: rgba(233, 196, 106, 0.5019607843);
+  transition: 0.5s;
+}
+main section#cta_services div.services a.service:hover {
+  background-color: #e9c46a;
+}
+main section#cta_services div.services a.service h3 {
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -151,6 +198,20 @@ main section#about p.signature {
     margin-left: 12px;
     color: #264653;
   }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 50px 0;
+    min-width: 500px;
+    min-height: 400px;
+  }
+  main section#cta_services div.services a.service h3 {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
   main section#hero h1 {
@@ -174,6 +235,20 @@ main section#about p.signature {
   }
   main section#about p.signature {
     font-size: 18px;
+  }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 50px 0;
+    min-width: 350px;
+    min-height: 250px;
+  }
+  main section#cta_services div.services a.service h3 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -199,5 +274,19 @@ main section#about p.signature {
   }
   main section#about p.signature {
     font-size: 16px;
+  }
+  main section#cta_services {
+    padding: 0 50px;
+  }
+  main section#cta_services div.services {
+    flex-direction: column;
+  }
+  main section#cta_services div.services a.service {
+    margin: 50px 0;
+    min-width: 300px;
+    min-height: 200px;
+  }
+  main section#cta_services div.services a.service h3 {
+    font-size: 40px;
   }
 }/*# sourceMappingURL=styles.css.map */
