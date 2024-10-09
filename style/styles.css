@@ -239,6 +239,9 @@ main section#cta_services div.services a.service h3 {
   main section#cta_services {
     padding: 0 50px;
   }
+  main section#cta_services h2 {
+    font-size: 32px;
+  }
   main section#cta_services div.services {
     flex-direction: column;
   }
@@ -277,6 +280,9 @@ main section#cta_services div.services a.service h3 {
   }
   main section#cta_services {
     padding: 0 50px;
+  }
+  main section#cta_services h2 {
+    font-size: 32px;
   }
   main section#cta_services div.services {
     flex-direction: column;
