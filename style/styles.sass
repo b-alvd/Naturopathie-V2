@@ -64,6 +64,25 @@ main
                 font-weight: bold
                 margin: 0 20px
                 color: $orange
+    section#about
+        display: flex
+        flex-direction: column
+        text-align: center
+        padding: 0 150px
+        h2
+            font-size: 40px
+            padding: 40px 0
+            color: $blue
+        p.text
+            font-size: 18px
+            line-height: 1.5
+            color: $blue
+        p.signature
+            padding: 40px 0
+            font-size: 20px
+            font-style: italic
+            color: $blue
+            text-decoration: underline $orange 3px
 
 @media only screen and (max-width: 950px)
     header
@@ -102,6 +121,14 @@ main
                     padding: 15px 0
                 p.point
                     margin: 0 10px
+        section#about
+            padding: 0 50px
+            h2
+                font-size: 32px
+            p.text
+                font-size: 16px
+            p.signature
+                font-size: 18px
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -114,3 +141,11 @@ main
                     margin: 0 5px
                 p.point
                     margin: 0 5px
+        section#about
+            padding: 0 20px
+            h2
+                font-size: 24px
+            p.text
+                font-size: 14px
+            p.signature
+                font-size: 16px
