@@ -11,12 +11,11 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   margin: 0;
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
-  color: #264653;
 }
 body p, body a {
+  margin: 0;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
-  color: #264653;
 }
 body a {
   text-decoration: none;
@@ -70,6 +69,36 @@ header nav input#menu-toggle:checked ~ ul.menu {
   transform: scale(1, 1);
 }
 
+main section#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88.3vh;
+  color: #ffffff;
+  background-color: #264653;
+}
+main section#hero h1 {
+  padding: 40px 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+main section#hero div.keywords {
+  display: flex;
+}
+main section#hero div.keywords p {
+  padding: 40px 0;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+main section#hero div.keywords span {
+  padding: 40px 0;
+  font-weight: bold;
+  margin: 0 20px;
+  color: #e76f51;
+}
+
 @media only screen and (max-width: 950px) {
   header nav label.menu-icon {
     display: block;
@@ -80,8 +109,8 @@ header nav input#menu-toggle:checked ~ ul.menu {
   header nav ul.menu {
     flex-direction: column;
     width: 100vw;
-    background-color: #264653;
-    align-items: start;
+    background-color: #ffffff;
+    align-items: center;
     position: absolute;
     top: 61px;
     left: 0;
@@ -89,12 +118,13 @@ header nav input#menu-toggle:checked ~ ul.menu {
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 0.3s ease-in-out;
+    border-top: 3px solid #264653;
   }
   header nav ul.menu li {
     margin: 15px 0;
   }
   header nav ul.menu li a {
     margin-left: 12px;
-    color: #ffffff;
+    color: #264653;
   }
 }/*# sourceMappingURL=styles.css.map */
