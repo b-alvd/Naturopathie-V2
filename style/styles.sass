@@ -51,15 +51,16 @@ main
             padding: 40px 0
             font-size: 48px
             font-weight: 700
+            text-align: center
         div.keywords
             display: flex
-            p
+            align-items: center
+            p.keyword
                 padding: 40px 0
                 margin: 0 10px
                 font-size: 18px
                 font-weight: 400
-            span
-                padding: 40px 0
+            p.point
                 font-weight: bold
                 margin: 0 20px
                 color: $orange
@@ -90,3 +91,26 @@ main
                     a
                         margin-left: 12px
                         color: $blue
+@media only screen and (max-width: 768px)
+    main
+        section#hero
+            h1
+                font-size: 36px
+            div.keywords
+                p.keyword
+                    font-size: 16px
+                    padding: 15px 0
+                p.point
+                    margin: 0 10px
+@media only screen and (max-width: 480px)
+    main
+        section#hero
+            h1
+                font-size: 28px
+            div.keywords
+                p.keyword
+                    font-size: 14px
+                    padding: 10px 0
+                    margin: 0 5px
+                p.point
+                    margin: 0 5px

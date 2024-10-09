@@ -82,18 +82,19 @@ main section#hero h1 {
   padding: 40px 0;
   font-size: 48px;
   font-weight: 700;
+  text-align: center;
 }
 main section#hero div.keywords {
   display: flex;
+  align-items: center;
 }
-main section#hero div.keywords p {
+main section#hero div.keywords p.keyword {
   padding: 40px 0;
   margin: 0 10px;
   font-size: 18px;
   font-weight: 400;
 }
-main section#hero div.keywords span {
-  padding: 40px 0;
+main section#hero div.keywords p.point {
   font-weight: bold;
   margin: 0 20px;
   color: #e76f51;
@@ -126,5 +127,30 @@ main section#hero div.keywords span {
   header nav ul.menu li a {
     margin-left: 12px;
     color: #264653;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main section#hero h1 {
+    font-size: 36px;
+  }
+  main section#hero div.keywords p.keyword {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  main section#hero div.keywords p.point {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main section#hero h1 {
+    font-size: 28px;
+  }
+  main section#hero div.keywords p.keyword {
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 0 5px;
+  }
+  main section#hero div.keywords p.point {
+    margin: 0 5px;
   }
 }/*# sourceMappingURL=styles.css.map */
