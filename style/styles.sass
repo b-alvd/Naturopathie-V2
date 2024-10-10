@@ -19,6 +19,8 @@ header
                 font-size: 24px
                 font-weight: 600
                 color: $blue
+                &:hover
+                    text-decoration: underline $orange 3px
         ul.menu
             display: flex
             align-items: center
@@ -190,6 +192,38 @@ main
             .humorisme_img
                 grid-column: 1
                 grid-row: 4
+footer
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding: 30px 0
+    background-color: $white
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.3)
+    a.logo
+        font-size: 25px
+        &:hover
+            text-decoration: underline $orange 3px
+    div.links
+        display: flex
+        align-items: center
+        justify-content: center
+        a
+            margin: 0 15px
+            padding: 20px
+            color: $white
+            background-color: $blue
+    ul
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+        margin: 0
+        li
+            margin: 0 15px
+            a
+                color: $blue
+                &:hover
+                    text-decoration: underline $orange 3px
 
 @media only screen and (max-width: 950px)
     header
@@ -360,3 +394,11 @@ main
                         font-size: 16px
                 div.image
                     display: none
+    footer
+        flex-direction: column
+        justify-content: center
+        padding: 20px 0
+        a.logo
+            margin-bottom: 20px
+        div.links
+            margin-bottom: 20px
