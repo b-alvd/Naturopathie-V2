@@ -295,6 +295,10 @@ footer div.links a {
   padding: 20px;
   color: #ffffff;
   background-color: #264653;
+  transition: 0.3s;
+}
+footer div.links a:hover {
+  background-color: rgba(38, 70, 83, 0.8078431373);
 }
 footer ul {
   display: flex;
