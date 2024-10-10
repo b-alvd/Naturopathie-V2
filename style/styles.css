@@ -203,6 +203,76 @@ main section#about_naturo div.about_naturo_container img {
   margin: 0 50px;
   background-color: red;
 }
+main section#naturo_fundamentals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section#naturo_fundamentals h2 {
+  color: #264653;
+}
+main section#naturo_fundamentals h2::after {
+  background-color: #e76f51;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.item {
+  padding: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.item h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .holisme {
+  background-color: #e9c46a;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .vitalisme {
+  background-color: #e76f51;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .causalisme {
+  background-color: #e9c46a;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .humorisme {
+  background-color: #e76f51;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.image {
+  width: 100%;
+  height: 100%;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container div.image img {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .holisme_img {
+  grid-column: 2;
+  grid-row: 1;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .vitalisme_img {
+  grid-column: 1;
+  grid-row: 2;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .causalisme_img {
+  grid-column: 2;
+  grid-row: 3;
+}
+main section#naturo_fundamentals div.naturo_fundamentals_container .humorisme_img {
+  grid-column: 1;
+  grid-row: 4;
+}
 
 @media only screen and (max-width: 950px) {
   header nav label.menu-icon {
@@ -232,6 +302,12 @@ main section#about_naturo div.about_naturo_container img {
     margin-left: 12px;
     color: #264653;
   }
+  main section#about {
+    padding: 0;
+  }
+  main section#about p.text {
+    font-size: 16px;
+  }
   main section#cta_services {
     padding: 0 50px;
   }
@@ -245,9 +321,6 @@ main section#about_naturo div.about_naturo_container img {
   }
   main section#cta_services div.services a.service h3 {
     font-size: 40px;
-  }
-  main section#about_naturo {
-    padding: 0 50px;
   }
   main section#about_naturo div.about_naturo_container {
     flex-direction: column;
@@ -304,9 +377,6 @@ main section#about_naturo div.about_naturo_container img {
   main section#cta_services div.services a.service h3 {
     font-size: 40px;
   }
-  main section#about_naturo {
-    padding: 0 50px;
-  }
   main section#about_naturo h2 {
     font-size: 32px;
   }
@@ -316,7 +386,6 @@ main section#about_naturo div.about_naturo_container img {
   }
   main section#about_naturo div.about_naturo_container p {
     text-align: center;
-    margin: 0 0 50px 0;
     width: 100%;
     font-size: 16px;
   }
@@ -324,6 +393,21 @@ main section#about_naturo div.about_naturo_container img {
     width: 300px;
     height: 400px;
     margin: 0;
+  }
+  main section#naturo_fundamentals h2 {
+    font-size: 32px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container {
+    grid-template-columns: 1fr;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.item h3 {
+    font-size: 24px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.item p {
+    font-size: 16px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.image {
+    display: none;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -379,7 +463,6 @@ main section#about_naturo div.about_naturo_container img {
   }
   main section#about_naturo div.about_naturo_container p {
     text-align: center;
-    margin: 0 0 50px 0;
     width: 100%;
     font-size: 16px;
   }
@@ -387,5 +470,20 @@ main section#about_naturo div.about_naturo_container img {
     width: 250px;
     height: 350px;
     margin: 0;
+  }
+  main section#naturo_fundamentals h2 {
+    font-size: 24px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container {
+    grid-template-columns: 1fr;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.item h3 {
+    font-size: 24px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.item p {
+    font-size: 16px;
+  }
+  main section#naturo_fundamentals div.naturo_fundamentals_container div.image {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
