@@ -48,7 +48,8 @@ main
         justify-content: center
         height: 88.3vh
         color: $white
-        background-color: $blue
+        background-image: url("https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJlJTIwcGF5c2FnZXxmcnwwfHx8fDE3MjgxNjc1NTl8MA&ixlib=rb-4.0.3")
+        background-size: cover
         h1
             padding: 40px 0
             font-size: 48px
@@ -65,7 +66,7 @@ main
             p.point
                 font-weight: bold
                 margin: 0 20px
-                color: $orange
+                color: $green
     section#about
         display: flex
         flex-direction: column
@@ -74,8 +75,6 @@ main
         padding: 0 150px
         h2
             color: $blue
-            &::after
-                background-color: $orange
         p.text
             font-size: 18px
             line-height: 1.5
@@ -85,17 +84,14 @@ main
             font-size: 20px
             font-style: italic
             color: $blue
-            text-decoration: underline $orange 3px
     section#cta_services
         display: flex
         flex-direction: column
         align-items: center
-        padding: 0 150px
+        margin: 50px 0
         background-color: $blue
         h2
             color: $white
-            &::after
-                background-color: $yellow
         div.services
             display: flex
             align-items: center
@@ -104,15 +100,18 @@ main
                 align-items: center
                 justify-content: center
                 margin: 80px 50px 130px 50px
-                min-width: 500px
-                min-height: 300px
+                min-width: 400px
+                min-height: 200px
+                border-radius: 5px
                 color: $white
                 background-color: $yellow-hover
                 transition: 0.5s
                 &:hover
                     background-color: $yellow
-                h3
+                p
                     font-size: 40px
+                    font-weight: 400
+                    font-family: "Fira Sans", serif
     section#about_naturo
         display: flex
         flex-direction: column
@@ -121,8 +120,6 @@ main
         padding: 0 150px
         h2
             color: $blue
-            &::after
-                background-color: $green
         div.about_naturo_container
             display: flex
             align-items: center
@@ -147,8 +144,6 @@ main
         justify-content: center
         h2
             color: $blue
-            &::after
-                background-color: $orange
         div.naturo_fundamentals_container
             display: grid
             grid-template-columns: repeat(2, 1fr)
@@ -159,6 +154,9 @@ main
                 color: $white
                 h3
                     font-size: 32px
+                    font-family: "Fira Sans", serif
+                    font-weight: 400
+                    text-decoration: underline $white 3px
                     margin-bottom: 30px
                 p
                     font-size: 16px
@@ -167,19 +165,16 @@ main
             .holisme
                 background-color: $yellow
             .vitalisme
-                background-color: $orange
+                background-color: $blue
             .causalisme
                 background-color: $yellow
             .humorisme
-                background-color: $orange
-            div.image
+                background-color: $blue
+            img
                 width: 100%
-                height: 100%
-                img
-                    width: 100%
-                    height: 100%
-                    background-color: red
-                    object-fit: cover
+                height: 336px
+                background-color: red
+                object-fit: cover
             .holisme_img
                 grid-column: 2
                 grid-row: 1
@@ -264,7 +259,7 @@ footer
                     margin: 5px 0 50px 0
                     min-width: 500px
                     min-height: 400px
-                    h3
+                    p
                         font-size: 40px
         section#about_naturo
             div.about_naturo_container
@@ -307,7 +302,7 @@ footer
                     margin: 5px 0 50px 0
                     min-width: 350px
                     min-height: 250px
-                    h3
+                    p
                         font-size: 40px
         section#about_naturo
             h2
@@ -333,7 +328,7 @@ footer
                         font-size: 24px
                     p
                         font-size: 16px
-                div.image
+                img
                     display: none
 @media only screen and (max-width: 480px)
     main
@@ -365,7 +360,7 @@ footer
                     margin: 5px 0 50px 0
                     min-width: 300px
                     min-height: 200px
-                    h3
+                    p
                         font-size: 40px
         section#about_naturo
             padding: 0 20px
@@ -392,7 +387,7 @@ footer
                         font-size: 24px
                     p
                         font-size: 16px
-                div.image
+                img
                     display: none
     footer
         flex-direction: column
