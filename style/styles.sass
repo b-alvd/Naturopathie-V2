@@ -111,6 +111,33 @@ main
                     background-color: $yellow
                 h3
                     font-size: 40px
+    section#about_naturo
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 0 150px
+        h2
+            color: $blue
+            &::after
+                background-color: $green
+        div.about_naturo_container
+            display: flex
+            align-items: center
+            justify-content: space-around
+            padding: 50px 80px 80px 80px
+            p
+                width: 700px
+                margin: 0 50px
+                text-align: left
+                font-size: 18px
+                line-height: 1.5
+                color: $blue
+            img
+                width: 300px
+                height: 400px
+                margin: 0 50px
+                background-color: red
 
 @media only screen and (max-width: 950px)
     header
@@ -149,6 +176,19 @@ main
                     min-height: 400px
                     h3
                         font-size: 40px
+        section#about_naturo
+            padding: 0 50px
+            div.about_naturo_container
+                flex-direction: column
+                p
+                    text-align: center
+                    margin: 0 0 50px 0
+                    width: 100%
+                    font-size: 16px
+                img
+                    width: 300px
+                    height: 400px
+                    margin: 0
 @media only screen and (max-width: 768px)
     main
         section#hero
@@ -180,6 +220,22 @@ main
                     min-height: 250px
                     h3
                         font-size: 40px
+        section#about_naturo
+            padding: 0 50px
+            h2
+                font-size: 32px
+            div.about_naturo_container
+                flex-direction: column
+                padding: 0 0 50px 0
+                p
+                    text-align: center
+                    margin: 0 0 50px 0
+                    width: 100%
+                    font-size: 16px
+                img
+                    width: 300px
+                    height: 400px
+                    margin: 0
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -212,3 +268,19 @@ main
                     min-height: 200px
                     h3
                         font-size: 40px
+        section#about_naturo
+            padding: 0 20px
+            h2
+                font-size: 24px
+            div.about_naturo_container
+                flex-direction: column
+                padding: 0 0 50px 0
+                p
+                    text-align: center
+                    margin: 0 0 50px 0
+                    width: 100%
+                    font-size: 16px
+                img
+                    width: 250px
+                    height: 350px
+                    margin: 0
