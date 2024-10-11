@@ -349,7 +349,7 @@ main section#questions_consult {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 100px 0;
+  margin-top: 75px;
   background-color: #264653;
 }
 main section#questions_consult div.question {
@@ -600,10 +600,14 @@ footer ul li a:hover {
   main section#infos_consult div.infos_consult_container div.consult p {
     font-size: 16px;
   }
+  main section#questions_consult {
+    margin-top: 25px;
+  }
   main section#questions_consult div.question div.text h3 {
     font-size: 22px;
   }
   main section#questions_consult div.question div.text p {
+    padding: 50px 50px 0 50px;
     font-size: 16px;
   }
 }
@@ -700,6 +704,16 @@ footer ul li a:hover {
     font-size: 24px;
   }
   main section#infos_consult div.infos_consult_container div.consult p {
+    font-size: 16px;
+  }
+  main section#questions_consult {
+    margin-top: 25px;
+  }
+  main section#questions_consult div.question div.text h3 {
+    font-size: 22px;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 25px 25px 0 25px;
     font-size: 16px;
   }
   footer {
