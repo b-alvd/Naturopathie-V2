@@ -41,6 +41,7 @@ header
             &:checked ~ ul.menu
                 transform: scale(1, 1)
 main
+    // index.html
     section#hero
         display: flex
         flex-direction: column
@@ -187,6 +188,68 @@ main
             .humorisme_img
                 grid-column: 1
                 grid-row: 4
+    // individuals.html
+    section#hero_individuals
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        height: 50vh
+        background-image: url("https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJlJTIwcGF5c2FnZXxmcnwwfHx8fDE3MjgxNjc1NTl8MA&ixlib=rb-4.0.3")
+        background-size: cover
+        background-position: center
+        h1
+            font-size: 70px
+            color: $white
+        p.subtitle
+            margin-bottom: 50px
+            font-size: 30px
+            font-weight: 400
+            color: $white
+        div.breadcrumb
+            display: flex
+            a
+                color: $white
+                &:hover
+                    text-decoration: underline $orange 3px
+            p
+                margin: 0 20px
+                color: $white
+                cursor: default
+    section#infos_consult
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 150px
+        margin-bottom: 50px
+        h2
+            color: $blue
+        div.infos_consult_container
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            div.consult
+                margin: 0 100px
+                text-align: center
+                img
+                    margin-bottom: 20px
+                    width: 100px
+                    height: 100px
+                    background-color: red
+                h3
+                    margin-bottom: 5px
+                    font-size: 32px
+                    font-family: "Fira Sans", serif
+                    font-weight: 400
+                    color: $blue
+                p
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 1.5
+                    color: $blue
+                    border: 1px solid $blue
 footer
     display: flex
     align-items: center
@@ -333,6 +396,20 @@ footer
                         font-size: 16px
                 img
                     display: none
+        // individuals.html
+        section#infos_consult
+            h2
+                font-size: 32px
+            div.infos_consult_container
+                div.consult
+                    margin: 25px 0
+                    img
+                        width: 90px
+                        height: 90px
+                    h3
+                        font-size: 24px
+                    p
+                        font-size: 16px
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -392,6 +469,21 @@ footer
                         font-size: 16px
                 img
                     display: none
+        // individuals.html
+        section#infos_consult
+            padding: 0 50px
+            h2
+                font-size: 24px
+            div.infos_consult_container
+                flex-direction: column
+                div.consult
+                    img
+                        width: 90px
+                        height: 90px
+                    h3
+                        font-size: 24px
+                    p
+                        font-size: 16px
     footer
         flex-direction: column
         justify-content: center
