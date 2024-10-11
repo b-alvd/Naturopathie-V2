@@ -310,7 +310,6 @@ main section#infos_consult {
   align-items: center;
   justify-content: center;
   padding: 0 150px;
-  margin-bottom: 50px;
 }
 main section#infos_consult h2 {
   color: #264653;
@@ -344,6 +343,40 @@ main section#infos_consult div.infos_consult_container div.consult p {
   line-height: 1.5;
   color: #264653;
   border: 1px solid #264653;
+}
+main section#questions_consult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+  background-color: #264653;
+}
+main section#questions_consult div.question {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+main section#questions_consult div.question h3 {
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  -webkit-text-decoration: underline #ffffff 3px;
+          text-decoration: underline #ffffff 3px;
+  margin-bottom: 30px;
+}
+main section#questions_consult div.question p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 0 150px;
+}
+main section#questions_consult div.question img {
+  width: 100%;
+  height: 336px;
 }
 
 footer {
@@ -456,6 +489,28 @@ footer ul li a:hover {
     height: 400px;
     margin: 0;
   }
+  main section#infos_consult {
+    padding: 0 50px;
+  }
+  main section#infos_consult div.infos_consult_container div.consult {
+    margin: 0;
+    padding: 30px;
+  }
+  main section#questions_consult div.question {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 50px 0;
+  }
+  main section#questions_consult div.question div.text h3 {
+    margin: 0;
+  }
+  main section#questions_consult div.question div.text p {
+    padding: 50px;
+    font-size: 16px;
+  }
+  main section#questions_consult div.question img {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   main section#hero h1 {
@@ -543,6 +598,12 @@ footer ul li a:hover {
     font-size: 24px;
   }
   main section#infos_consult div.infos_consult_container div.consult p {
+    font-size: 16px;
+  }
+  main section#questions_consult div.question div.text h3 {
+    font-size: 22px;
+  }
+  main section#questions_consult div.question div.text p {
     font-size: 16px;
   }
 }
