@@ -36,6 +36,41 @@ body a {
 body ul {
   list-style: none;
 }
+body main section#hero_all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJlJTIwcGF5c2FnZXxmcnwwfHx8fDE3MjgxNjc1NTl8MA&ixlib=rb-4.0.3");
+  background-size: cover;
+  background-position: center;
+}
+body main section#hero_all h1 {
+  font-size: 70px;
+  color: #ffffff;
+}
+body main section#hero_all p.subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+}
+body main section#hero_all div.breadcrumb {
+  display: flex;
+  margin-top: 50px;
+}
+body main section#hero_all div.breadcrumb a {
+  color: #ffffff;
+}
+body main section#hero_all div.breadcrumb a:hover {
+  -webkit-text-decoration: underline #8dc945 3px;
+          text-decoration: underline #8dc945 3px;
+}
+body main section#hero_all div.breadcrumb p {
+  margin: 0 20px;
+  color: #ffffff;
+  cursor: default;
+}
 
 header {
   position: sticky;
@@ -266,41 +301,6 @@ main section#naturo_fundamentals div.naturo_fundamentals_container .causalisme_i
 main section#naturo_fundamentals div.naturo_fundamentals_container .humorisme_img {
   grid-column: 1;
   grid-row: 4;
-}
-main section#hero_individuals {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
-  background-image: url("https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJlJTIwcGF5c2FnZXxmcnwwfHx8fDE3MjgxNjc1NTl8MA&ixlib=rb-4.0.3");
-  background-size: cover;
-  background-position: center;
-}
-main section#hero_individuals h1 {
-  font-size: 70px;
-  color: #ffffff;
-}
-main section#hero_individuals p.subtitle {
-  margin-bottom: 50px;
-  font-size: 30px;
-  font-weight: 400;
-  color: #ffffff;
-}
-main section#hero_individuals div.breadcrumb {
-  display: flex;
-}
-main section#hero_individuals div.breadcrumb a {
-  color: #ffffff;
-}
-main section#hero_individuals div.breadcrumb a:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
-}
-main section#hero_individuals div.breadcrumb p {
-  margin: 0 20px;
-  color: #ffffff;
-  cursor: default;
 }
 main section#infos_consult {
   display: flex;
