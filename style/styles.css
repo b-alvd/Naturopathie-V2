@@ -943,6 +943,16 @@ footer ul li a:hover {
   main section#calendly h2 {
     font-size: 24px;
   }
+  main section#who h2 {
+    font-size: 24px;
+  }
+  main section#who div.who_container img {
+    width: 180px;
+    height: 250px;
+  }
+  main section#who div.who_container p {
+    font-size: 16px;
+  }
   main section#quote div.quote_container {
     padding: 50px 20px;
   }
@@ -951,7 +961,7 @@ footer ul li a:hover {
   }
   main section#quote div.quote_container p {
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
   }
   main section#presentation div.presentation_container {
     display: flex;
@@ -963,8 +973,12 @@ footer ul li a:hover {
   main section#presentation div.presentation_container div.text {
     padding: 25px 0;
   }
+  main section#presentation div.presentation_container div.text h3 {
+    font-size: 24px;
+  }
   main section#presentation div.presentation_container div.text p {
     padding: 0 40px;
+    font-size: 16px;
   }
   footer {
     flex-direction: column;
