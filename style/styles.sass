@@ -189,33 +189,6 @@ main
                 grid-column: 1
                 grid-row: 4
     // individuals.html
-    // section#hero_all
-    //     display: flex
-    //     flex-direction: column
-    //     align-items: center
-    //     justify-content: center
-    //     height: 50vh
-    //     background-image: url("https://images.unsplash.com/39/wdXqHcTwSTmLuKOGz92L_Landscape.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8bmF0dXJlJTIwcGF5c2FnZXxmcnwwfHx8fDE3MjgxNjc1NTl8MA&ixlib=rb-4.0.3")
-    //     background-size: cover
-    //     background-position: center
-    //     h1
-    //         font-size: 70px
-    //         color: $white
-    //     p.subtitle
-    //         margin-bottom: 50px
-    //         font-size: 30px
-    //         font-weight: 400
-    //         color: $white
-    //     div.breadcrumb
-    //         display: flex
-    //         a
-    //             color: $white
-    //             &:hover
-    //                 text-decoration: underline $green 3px
-    //         p
-    //             margin: 0 20px
-    //             color: $white
-    //             cursor: default
     section#infos_consult
         display: flex
         flex-direction: column
@@ -314,6 +287,113 @@ main
                         font-weight: 400
                         line-height: 1.5
                         color: $blue
+    // who_i_am.html
+    section#who
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 150px
+        h2
+            color: $blue
+        div.who_container
+            display: flex
+            align-items: center
+            justify-content: center
+            // width: 100%
+            margin: 0 100px
+            text-align: center
+            img
+                margin-bottom: 20px
+                width: 250px
+                height: 350px
+                background-color: red
+            p
+                padding-left: 200px
+                font-size: 20px
+                font-weight: 400
+                line-height: 1.5
+                color: $blue
+    section#quote
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-top: 50px
+        background-color: $blue
+        box-shadow: inset 0 0 50px rgba(255, 255, 255, 0.2)
+        div.quote_container
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            padding: 50px 300px
+            color: $white
+            img
+                width: 50px
+                padding: 0 0 80px 0
+            p
+                margin-left: 20px
+                font-size: 28px
+                font-weight: 500
+                line-height: 1.5
+        a
+            margin-bottom: 50px
+            padding: 15px 30px
+            border-radius: 5px
+            background-color: $white
+            transition: 0.3s
+            &:hover
+                background-color: $white-hover
+    section#presentation
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        div.presentation_container
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: $blue
+            img
+                width: 100%
+                height: 400px
+            img.img1
+                grid-column: 1 / 2
+            img.img2
+                grid-column: 2 / 3
+            img.img3
+                grid-column: 1 / 2
+            div.text
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                height: 100%
+                h3
+                    font-size: 32px
+                    margin-bottom: 30px
+                    text-decoration: underline 2px
+                    color: $white
+                p
+                    padding: 0 100px
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 1.5
+                    color: $white
+            div.text1
+                grid-column: 2 / 3
+                background-color: $yellow
+            div.text2
+                grid-column: 1 / 2
+                grid-row: 2 / 3
+                background-color: $orange
+            div.text3
+                grid-column: 2 / 3
+                grid-row: 3 / 4
+                background-color: $yellow
 footer
     display: flex
     align-items: center
@@ -518,6 +598,32 @@ footer
             div.infos_office
                 iframe
                     width: 100%
+        section#who
+            padding: 0 50px
+            div.who_container
+                margin: 0
+                flex-direction: column
+                img
+                    margin-bottom: 50px
+                    width: 200px
+                    height: 300px
+                p
+                    padding: 0
+        section#quote
+            div.quote_container
+                padding: 50px 50px
+                img
+                    padding: 0 0 150px 0
+                p
+                    font-size: 22px
+        section#presentation
+            div.presentation_container
+                display: flex
+                flex-direction: column
+                img.img
+                    display: none
+                div.text
+                    padding: 25px 0
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -604,6 +710,24 @@ footer
         section#calendly
             h2
                 font-size: 24px
+        section#quote
+            div.quote_container
+                padding: 50px 20px
+                img
+                    display: none
+                p
+                    margin: 0
+                    font-size: 22px
+        section#presentation
+            div.presentation_container
+                display: flex
+                flex-direction: column
+                img.img
+                    display: none
+                div.text
+                    padding: 25px 0
+                    p
+                        padding: 0 40px
     footer
         flex-direction: column
         justify-content: center
