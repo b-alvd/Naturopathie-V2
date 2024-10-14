@@ -383,9 +383,43 @@ main section#calendly {
 main section#calendly h2 {
   color: #264653;
 }
-main section#calendly div.calendly-inline-budget {
-  min-width: 320px;
-  height: 700px;
+main section#office {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+main section#office h2 {
+  color: #264653;
+}
+main section#office div.infos_office {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+main section#office div.infos_office iframe {
+  margin: 0 50px;
+}
+main section#office div.infos_office div.adress {
+  margin: 0 50px;
+}
+main section#office div.infos_office div.adress div.text {
+  margin: 50px 0;
+}
+main section#office div.infos_office div.adress div.text h3 {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-family: "Fira Sans", serif;
+  font-weight: 400;
+  color: #264653;
+}
+main section#office div.infos_office div.adress div.text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #264653;
 }
 
 footer {
@@ -520,6 +554,15 @@ footer ul li a:hover {
   main section#questions_consult div.question img {
     display: none;
   }
+  main section#calendly {
+    margin-bottom: 25px;
+  }
+  main section#office {
+    padding: 0 50px;
+  }
+  main section#office div.infos_office {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 768px) {
   main section#hero h1 {
@@ -618,6 +661,15 @@ footer ul li a:hover {
   main section#questions_consult div.question div.text p {
     padding: 50px 50px 0 50px;
     font-size: 15px;
+  }
+  main section#calendly h2 {
+    font-size: 32px;
+  }
+  main section#office h2 {
+    font-size: 32px;
+  }
+  main section#office div.infos_office iframe {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -724,6 +776,9 @@ footer ul li a:hover {
   main section#questions_consult div.question div.text p {
     padding: 25px 25px 0 25px;
     font-size: 14px;
+  }
+  main section#calendly h2 {
+    font-size: 24px;
   }
   footer {
     flex-direction: column;
