@@ -394,6 +394,83 @@ main
                 grid-column: 2 / 3
                 grid-row: 3 / 4
                 background-color: $yellow
+    // contact.html
+    section#contact
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 100px 0
+        h2
+            color: $blue
+        div.contact_form
+            padding: 0 50px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            form
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                p.asterisk_text
+                    margin: 0 0 10px 0
+                    padding: 10px 15px
+                    font-size: 12.2px
+                    color: $white
+                    background-color: $blue
+                label
+                    margin: 5px 0
+                    color: $blue
+                input
+                    width: 300px
+                    height: 10px
+                    padding: 5px
+                    color: $blue
+                    border: 1px solid $blue
+                textarea
+                    width: 300px
+                    height: 100px
+                    padding: 5px
+                    resize: none
+                    color: $blue
+                    border: 1px solid $blue
+                button
+                    margin: 30px 0
+                    padding: 15px 20px
+                    border-radius: 5px
+                    color: $white
+                    background-color: $blue
+                    border: none
+                    transition: 0.3s
+                    &:hover
+                        cursor: pointer
+                        background-color: $blue-hover
+        div.contact_other
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 0 50px
+            h3
+                margin-bottom: 5px
+                font-family: "Fira Sans", serif
+                color: $blue
+            p
+                
+                padding: 10px 15px
+                color: $white
+                background-color: $blue
+            a
+                color: $blue
+                &:hover
+                    text-decoration: underline $green 3px
+            div.phone_mail
+                display: flex
+                align-items: center
+                justify-content: center
+                div
+                    margin: 5px 50px
 footer
     display: flex
     align-items: center
@@ -509,6 +586,14 @@ footer
             padding: 0 50px
             div.infos_office
                 flex-direction: column
+        // contact.html
+        section#contact
+            padding: 50px 0
+            flex-direction: column
+            div.contact_other
+                flex-direction: column
+                div
+                    margin: 5px 0
 @media only screen and (max-width: 768px)
     main
         section#hero
@@ -624,6 +709,21 @@ footer
                     display: none
                 div.text
                     padding: 25px 0
+        // contact.html
+        section#contact
+            div.contact_other
+                h3
+                    font-size: 24px
+                p
+                    font-size: 16px
+                div.adress
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    iframe
+                        width: 400px
 @media only screen and (max-width: 480px)
     main
         section#hero
@@ -741,6 +841,25 @@ footer
                     p
                         padding: 0 40px
                         font-size: 16px
+        // contact.html
+        section#contact
+            div.contact_other
+                padding: 0
+                h3
+                    font-size: 20px
+                p
+                    font-size: 14px
+                div.adress
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    text-align: center
+                    iframe
+                        width: 405px
+                div.phone_mail
+                    div
+                        margin: 5px 20px
     footer
         flex-direction: column
         justify-content: center
