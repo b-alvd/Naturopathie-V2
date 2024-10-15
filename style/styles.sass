@@ -843,11 +843,16 @@ footer
                         font-size: 16px
         // contact.html
         section#contact
+            div.contact_form
+                padding: 0
+                h2
+                    font-size: 24px
             div.contact_other
                 padding: 0
                 h3
                     font-size: 20px
-                p
+                p.adress
+                    width: 50%
                     font-size: 14px
                 div.adress
                     display: flex
@@ -855,9 +860,16 @@ footer
                     align-items: center
                     justify-content: center
                     text-align: center
+                    div.text
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        text-align: center
                     iframe
-                        width: 405px
+                        width: 300px
                 div.phone_mail
+                    flex-direction: column
                     div
                         margin: 5px 20px
     footer

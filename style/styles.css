@@ -1103,13 +1103,20 @@ footer ul li a:hover {
     padding: 0 40px;
     font-size: 16px;
   }
+  main section#contact div.contact_form {
+    padding: 0;
+  }
+  main section#contact div.contact_form h2 {
+    font-size: 24px;
+  }
   main section#contact div.contact_other {
     padding: 0;
   }
   main section#contact div.contact_other h3 {
     font-size: 20px;
   }
-  main section#contact div.contact_other p {
+  main section#contact div.contact_other p.adress {
+    width: 50%;
     font-size: 14px;
   }
   main section#contact div.contact_other div.adress {
@@ -1119,8 +1126,18 @@ footer ul li a:hover {
     justify-content: center;
     text-align: center;
   }
+  main section#contact div.contact_other div.adress div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   main section#contact div.contact_other div.adress iframe {
-    width: 405px;
+    width: 300px;
+  }
+  main section#contact div.contact_other div.phone_mail {
+    flex-direction: column;
   }
   main section#contact div.contact_other div.phone_mail div {
     margin: 5px 20px;
