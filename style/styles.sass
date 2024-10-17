@@ -170,8 +170,9 @@ main
                 justify-content: center
                 h3
                     font-size: 32px
+                    font-family: "Fira Sans", serif
+                    font-weight: 400
                     margin-bottom: 30px
-                    text-decoration: underline 2px
                     color: $white
                 p
                     padding: 0 50px
@@ -181,7 +182,7 @@ main
                     color: $white
             div.text1
                 grid-column: 2 / 3
-                background-color: $orange
+                background-color: $yellow
             div.text2
                 grid-column: 1 / 2
                 grid-row: 2 / 3
@@ -189,7 +190,7 @@ main
             div.text3
                 grid-column: 2 / 3
                 grid-row: 3 / 4
-                background-color: $orange
+                background-color: $yellow
             div.text4
                 grid-column: 1 / 2
                 grid-row: 4 / 5
@@ -304,18 +305,18 @@ main
             color: $blue
         div.who_container
             display: flex
+            flex-direction: column
             align-items: center
             justify-content: center
             // width: 100%
             margin: 0 100px
             text-align: center
             img
-                margin-bottom: 20px
-                width: 250px
+                margin-bottom: 50px
+                width: 100%
                 height: 350px
                 background-color: red
             p
-                padding-left: 200px
                 font-size: 20px
                 font-weight: 400
                 line-height: 1.5
@@ -694,7 +695,7 @@ footer
                 flex-direction: column
                 img
                     margin-bottom: 50px
-                    width: 200px
+                    width: 100%
                     height: 300px
                 p
                     padding: 0
@@ -823,7 +824,7 @@ footer
                 font-size: 24px
             div.who_container
                 img
-                    width: 180px
+                    width: 100%
                     height: 250px
                 p
                     font-size: 16px
