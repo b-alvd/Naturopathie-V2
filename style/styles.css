@@ -563,6 +563,16 @@ main section#presentation div.presentation_container div.text3 {
   grid-row: 3/4;
   background-color: #ffd062;
 }
+main section#presentation div.presentation_container div.text3 div.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section#presentation div.presentation_container div.text3 div.logos img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
 main section#contact {
   display: flex;
   align-items: center;
