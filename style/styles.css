@@ -669,8 +669,9 @@ footer a.logo {
   font-size: 25px;
 }
 footer a.logo:hover {
-  -webkit-text-decoration: underline #abcc80 3px;
-          text-decoration: underline #abcc80 3px;
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
 }
 footer div.links {
   display: flex;
@@ -701,8 +702,9 @@ footer ul li a {
   color: #264653;
 }
 footer ul li a:hover {
-  -webkit-text-decoration: underline #abcc80 3px;
-          text-decoration: underline #abcc80 3px;
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
 }
 
 @media only screen and (max-width: 950px) {
