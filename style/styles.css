@@ -22,7 +22,7 @@ body h2::after {
   width: 70%;
   height: 3px;
   margin: 10px auto;
-  background-color: #8dc945;
+  background-color: #e76f51;
 }
 body p, body a {
   margin: 0;
@@ -67,8 +67,8 @@ body main section#hero_all div.breadcrumb a {
   color: #ffffff;
 }
 body main section#hero_all div.breadcrumb a:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
+  -webkit-text-decoration: underline #abcc80 3px;
+          text-decoration: underline #abcc80 3px;
 }
 body main section#hero_all div.breadcrumb p {
   margin: 0 20px;
@@ -96,8 +96,9 @@ header nav div.logo a {
   color: #264653;
 }
 header nav div.logo a:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
+  -webkit-text-decoration: underline #e76f51 3px;
+          text-decoration: underline #e76f51 3px;
+  text-underline-offset: 5px;
 }
 header nav ul.menu {
   display: flex;
@@ -112,8 +113,9 @@ header nav ul.menu li a {
   color: #264653;
 }
 header nav ul.menu li a:hover {
-  -webkit-text-decoration: underline #8dc945 2px;
-          text-decoration: underline #8dc945 2px;
+  -webkit-text-decoration: underline #e76f51 2px;
+          text-decoration: underline #e76f51 2px;
+  text-underline-offset: 5px;
 }
 header nav label.menu-icon {
   display: none;
@@ -154,7 +156,7 @@ main section#hero div.keywords p.keyword {
 main section#hero div.keywords p.point {
   font-weight: bold;
   margin: 0 20px;
-  color: #8dc945;
+  color: #abcc80;
 }
 main section#about {
   display: flex;
@@ -200,11 +202,11 @@ main section#cta_services div.services a.service {
   min-height: 200px;
   border-radius: 5px;
   color: #ffffff;
-  background-color: rgba(255, 207, 87, 0.5019607843);
+  background-color: rgba(255, 208, 98, 0.5019607843);
   transition: 0.5s;
 }
 main section#cta_services div.services a.service:hover {
-  background-color: #ffcf57;
+  background-color: #ffd062;
 }
 main section#cta_services div.services a.service p {
   font-size: 40px;
@@ -296,22 +298,22 @@ main section#naturo_fundamentals div.naturo_fundamentals_container div.text p {
 }
 main section#naturo_fundamentals div.naturo_fundamentals_container div.text1 {
   grid-column: 2/3;
-  background-color: #ffcf57;
+  background-color: #264653;
 }
 main section#naturo_fundamentals div.naturo_fundamentals_container div.text2 {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: #8dc945;
+  background-color: #abcc80;
 }
 main section#naturo_fundamentals div.naturo_fundamentals_container div.text3 {
   grid-column: 2/3;
   grid-row: 3/4;
-  background-color: #ffcf57;
+  background-color: #264653;
 }
 main section#naturo_fundamentals div.naturo_fundamentals_container div.text4 {
   grid-column: 1/2;
   grid-row: 4/5;
-  background-color: #8dc945;
+  background-color: #abcc80;
 }
 main section#infos_consult {
   display: flex;
@@ -549,7 +551,7 @@ main section#presentation div.presentation_container div.text p {
 }
 main section#presentation div.presentation_container div.text1 {
   grid-column: 2/3;
-  background-color: #ffcf57;
+  background-color: #ffd062;
 }
 main section#presentation div.presentation_container div.text2 {
   grid-column: 1/2;
@@ -559,7 +561,7 @@ main section#presentation div.presentation_container div.text2 {
 main section#presentation div.presentation_container div.text3 {
   grid-column: 2/3;
   grid-row: 3/4;
-  background-color: #ffcf57;
+  background-color: #ffd062;
 }
 main section#contact {
   display: flex;
@@ -643,8 +645,8 @@ main section#contact div.contact_other a {
   color: #264653;
 }
 main section#contact div.contact_other a:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
+  -webkit-text-decoration: underline #abcc80 3px;
+          text-decoration: underline #abcc80 3px;
 }
 main section#contact div.contact_other div.phone_mail {
   display: flex;
@@ -667,8 +669,8 @@ footer a.logo {
   font-size: 25px;
 }
 footer a.logo:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
+  -webkit-text-decoration: underline #abcc80 3px;
+          text-decoration: underline #abcc80 3px;
 }
 footer div.links {
   display: flex;
@@ -699,8 +701,8 @@ footer ul li a {
   color: #264653;
 }
 footer ul li a:hover {
-  -webkit-text-decoration: underline #8dc945 3px;
-          text-decoration: underline #8dc945 3px;
+  -webkit-text-decoration: underline #abcc80 3px;
+          text-decoration: underline #abcc80 3px;
 }
 
 @media only screen and (max-width: 950px) {
